@@ -1,0 +1,27 @@
+/* PSEUDO-CLASES */
+a:link {
+  color: red;
+}
+a:visited {
+  color: steelblue;
+}
+a:hover {
+  color: pink;
+}
+
+p:not(.clase1) {
+  color: steelblue;
+}
+
+.contenedor:nth-child(1) {
+  background-color: green;
+}
+
+/* PSEUDO-ELEMENTOS */
+.texto::before {
+  content: ":)";
+}
+
+.texto::after {
+  content: ":(";
+}

@@ -1,0 +1,121 @@
+/* TRANSLATE */
+h2 {
+  text-align: center;
+  font-size: 3rem;
+}
+section {
+  display: grid;
+  justify-content: center;
+}
+.shadow {
+  width: 100px;
+  height: 100px;
+  background-color: #e1e1e1;
+  border-radius: 50%;
+}
+.circle {
+  background-color: blueviolet;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.circle:hover {
+  transform: translate(20px, -20px) scale(1.2);
+}
+
+/* ROTATE, SCALE, SKEW, MATRIX */
+.rotate {
+  width: 100px;
+  height: 100px;
+  background-color: steelblue;
+}
+.rotate:hover {
+  transform: rotate(50deg);
+  transform: rotateX(25deg);
+  transform: rotateY(30deg);
+}
+
+.scale {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: violet;
+}
+
+.scale:hover {
+  transform: scale(1.2, 1);
+  transform: scaleX(0.9);
+  transform: scaleY(1.2);
+}
+
+.skew {
+  width: 100px;
+  height: 100px;
+  background-color: lightpink;
+  border-radius: 10px;
+}
+
+.skew:hover {
+  transform: skew(10deg);
+  transform: skewX(10deg);
+  transform: skewY(10deg);
+}
+
+/* TRANSFORM ORIGIN  */
+.origin {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  transform-origin: right top;
+}
+.origin:hover {
+  transform: rotate(90deg);
+}
+
+/* STYLE y PERSPECTIVE */
+.contenedor {
+  perspective: 100px;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: hotpink;
+}
+
+.item {
+  transform-style: preserve-3d;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(138, 43, 226);
+  opacity: 0.5;
+  transform: rotate(200deg);
+}
+
+/* BACKFACE VISIBILITY */
+.card {
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+}
+
+.face {
+  position: absolute;
+  backface-visibility: hidden;
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+}
+
+.face.front {
+  background-color: hotpink;
+}
+.face.back {
+  background-color: greenyellow;
+  transform: rotatex(180deg);
+}
